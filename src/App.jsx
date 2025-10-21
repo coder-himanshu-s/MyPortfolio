@@ -1,24 +1,28 @@
 import React from "react";
-import Header from "./components/Header";
+import Layout from "./components/Layout";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-
+import SocialLinks from "./components/SocialLinks";
+import ScrollToTop from "./components/ScrollToTop";
+import './styles/global.css';
+import './styles/animations.css';
 
 function Portfolio() {
   return (
-    <div className="font-sans">
-      <Header />
-      <Hero />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
-    </div>
+    <Layout>
+      <div className="space-y-0">
+        <Hero />
+        <SocialLinks />
+        <About />
+        <Projects />
+        <Skills />
+        <Contact />
+      </div>
+      <ScrollToTop />
+    </Layout>
   );
 }
 
